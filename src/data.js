@@ -1,4 +1,4 @@
-export const data = {
+const data = {
   tr: {
     header: {
       darkmode: "GECE MODU",
@@ -179,3 +179,5 @@ export const data = {
     },
   },
 };
+
+export default data;
