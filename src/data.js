@@ -5,22 +5,34 @@ const data = {
       lightmode: "GÜNDÜZ MODU",
       languagetxt: "İNGİLİZCEYE",
       language: " GEÇ",
+      skill: "Beceriler",
+      proje: "Projeler",
+      contact: "İletişim!",
     },
     introduction: {
       greeting1: "Merhaba,ben ",
       greeting2: "Batuhan Sena Sert",
       greeting3: "Web Developer",
       p1: "Merhaba,ben Batuhan.Bir web geliştiriciyim. Sağlam ve ölçeklenebilir ön uç ürünleri oluşturmak ve harika kullanıcı deneyimleri sunmak için buradayım. Benimle tanışmak isterseniz, aşağıdaki kanallardan bana ulaşabilirsiniz.",
-      iletişim1: "batuhansenasert@gmail.com",
-      iletişim2: "https://github.com/BSenaS",
-      iletişim3: "https://www.linkedin.com/in/bssert/",
+      iletişim1: "İletişim",
+      iletişim2: "Github",
+      iletişim3: "LinkedIn",
     },
     skills: {
       title: "Beceriler",
       skillerim: [
-        { name: "Java Script", desc: "LoremIpsum1" },
-        { name: "React.Js", desc: "LoremIpsum2" },
-        { name: "Node.Js", desc: "LoremIpsum3" },
+        {
+          name: "Java Script",
+          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          name: "React.Js",
+          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          name: "Node.Js",
+          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
       ],
     },
     profile: {
@@ -94,6 +106,9 @@ const data = {
       lightmode: "LIGHT MODE",
       language: "SWITCH TO",
       languagetxt: " TURKISH",
+      skill: "Skills",
+      proje: "Projects",
+      contact: "Contact!",
     },
     introduction: {
       greeting1: "Hi, I'm ",
@@ -103,13 +118,25 @@ const data = {
       contact1: "batuhansenasert@gmail.com",
       contact2: "https://github.com/BSenaS",
       contact3: "https://www.linkedin.com/in/bssert/",
+      iletişim1: "Contact",
+      iletişim2: "Github",
+      iletişim3: "LinkedIn",
     },
     skills: {
       title: "Skills",
       skillset: [
-        { name: "JavaScript", desc: "LoremIpsum1" },
-        { name: "React.js", desc: "LoremIpsum2" },
-        { name: "Node.js", desc: "LoremIpsum3" },
+        {
+          name: "JavaScript",
+          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          name: "React.js",
+          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          name: "Node.js",
+          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
       ],
     },
     profile: {

@@ -17,7 +17,7 @@ export const LangThemeContextProvider = ({ children }) => {
   };
 
   //axios isteği
-  const [textData, setTextData] = useState(data);
+  const [textData, setTextData] = useState({});
   return (
     <LangThemeContext.Provider
       value={{
