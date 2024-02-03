@@ -16,10 +16,12 @@ export function Skills() {
               {skill.name}
             </h2>
             <p className="text-sm pb-4 text-[#6B7280]">{skill.desc}</p>
-            <hr className="pb-4" />
           </div>
         );
       })}
+      <div className="w-full">
+        <hr className="border-1 border-[#BAB2E7] my-4" />
+      </div>
     </div>
   );
 }

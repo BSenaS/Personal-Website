@@ -55,39 +55,38 @@ const data = {
     },
     projects: {
       title: "Projeler",
-      projectarray: [1, 2, 3],
       project1: {
         title: "Pizza Siparişi",
         p1: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-        tags: ["JS", "React", "Vercel", "Axios", "Router", "Context"],
+        tags: ["JS", "React", "Axios", "Router", "Context"],
         links: {
           git: "Github",
           redirect: "Siteye git ",
         },
         link: "linkgelecek.com",
-        image: "/assets/projeResim1.png",
+        image: "/project-img/projeResim1.png",
       },
       project2: {
         title: "Redux Filmler",
         p1: "Bu projede, ilginizi çeken filmin detaylarını görüntüleyebilir, değiştirmek istediğiniz bilgileri değiştirebilir ve yeni bir film ekleyebilirsiniz. Ek olarak, en sevdiğiniz filmleri favoriler listesine ekleyebilirsiniz. Bileşenler arasındaki veri aktarımı, Redux kitaplığı kullanılarak gerçekleştirilir.",
         tags: ["react", "redux", "axios", "router", "vercel"],
         links: {
-          git: "Github'da göster",
+          git: "Github",
           redirect: "Uygulamaya git ",
         },
         link: "linkgelecek.com",
-        image: "/assets/projeResim2.png",
+        image: "/project-img/projeResim2.png",
       },
       project3: {
         title: "Redux Filmler",
         p1: "Bu projede, ilginizi çeken filmin detaylarını görüntüleyebilir, değiştirmek istediğiniz bilgileri değiştirebilir ve yeni bir film ekleyebilirsiniz. Ek olarak, en sevdiğiniz filmleri favoriler listesine ekleyebilirsiniz. Bileşenler arasındaki veri aktarımı, Redux kitaplığı kullanılarak gerçekleştirilir.",
         tags: ["react", "redux", "axios", "router", "vercel"],
         links: {
-          git: "Github'da göster",
+          git: "Github",
           redirect: "Uygulamaya git ",
         },
         link: "linkgelecek.com",
-        image: "/assets/projeResim3.png",
+        image: "/project-img/projeResim3.png",
       },
     },
     footer: {
@@ -124,7 +123,7 @@ const data = {
     },
     skills: {
       title: "Skills",
-      skillset: [
+      skillerim: [
         {
           name: "JavaScript",
           desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -160,39 +159,38 @@ const data = {
 
     projects: {
       title: "Projeler",
-      projectarray: [1, 2],
       project1: {
         title: "Workintech",
         p1: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-        tags: ["JS", "React", "Vercel", "Axios", "Router", "Context"],
+        tags: ["JS", "React", "Axios", "Router", "Context"],
         links: {
           git: "Github",
-          redirect: "Siteye git ",
+          redirect: "Visit Site",
         },
         link: "linkgelecek.com",
-        image: "/assets/projeResim1.png",
+        image: "/project-img/projeResim1.png",
       },
       project2: {
         title: "Random Jokes",
         p1: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-        tags: ["react", "redux", "axios", "router", "vercel"],
+        tags: ["react", "redux", "axios", "router"],
         links: {
           git: "Github",
-          redirect: "Uygulamaya git ",
+          redirect: "Visit Site",
         },
         link: "linkgelecek.com",
-        image: "/assets/projeResim2.png",
+        image: "/project-img/projeResim2.png",
       },
       project3: {
         title: "Journey",
         p1: "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-        tags: ["react", "redux", "axios", "router", "vercel"],
+        tags: ["react", "redux", "axios", "router"],
         links: {
           git: "Github",
-          redirect: "Uygulamaya git ",
+          redirect: "Visit Site",
         },
         link: "linkgelecek.com",
-        image: "/assets/projeResim3.png",
+        image: "/project-img/projeResim3.png",
       },
     },
     footer: {
