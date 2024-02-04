@@ -95,7 +95,7 @@ const data = {
         git: "Github",
         blog: "Kişisel Blog",
         linkedin: "Linkedin",
-        email: "Email",
+        email: "batuhansenasert@gmail.com",
       },
     },
   },

@@ -31,12 +31,14 @@ export function App() {
   }
   return (
     <>
-      <div className="max-w-6xl justify-center mx-auto">
-        <Header />
-        <Hero />
-        <Skills />
-        <Profile />
-        <Projects />
+      <div>
+        <div className="max-w-6xl justify-center mx-auto">
+          <Header />
+          <Hero />
+          <Skills />
+          <Profile />
+          <Projects />
+        </div>
         <Footer />
       </div>
     </>

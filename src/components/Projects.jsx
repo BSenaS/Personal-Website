@@ -8,7 +8,7 @@ export function Projects() {
   return (
     <div className="mx-4">
       <div className="text-5xl py-8">{txt.title}</div>
-      <div className="flex justify-between">
+      <div className="flex justify-between flex-wrap">
         {filteredProjects.map((item, index) => {
           return (
             <div key={index} className="flex flex-col max-w-[300px]">
