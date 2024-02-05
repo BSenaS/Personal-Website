@@ -7,15 +7,17 @@ export function Skills() {
   return (
     <div className="max-w-full flex flex-wrap mx-4 mb-4 justify-between">
       <h1 className="min-w-full pt-16 text-5xl font-medium mb-8">
-        {txt.title}
+        <span className="dark:text-[#AEBCCF]">{txt.title}</span>
       </h1>
       {txt.skillerim.map((skill, index) => {
         return (
           <div key={index} className="flex flex-wrap flex-col max-w-72 ">
             <h2 className="font-medium text-3xl text-[#4338CA] pb-4">
-              {skill.name}
+              <span className="dark:text-[#B7AAFF]">{skill.name}</span>
             </h2>
-            <p className="text-sm pb-4 text-[#6B7280]">{skill.desc}</p>
+            <p className="text-sm pb-4 text-[#6B7280] dark:text-white">
+              {skill.desc}
+            </p>
           </div>
         );
       })}
