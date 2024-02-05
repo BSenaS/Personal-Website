@@ -1,19 +1,12 @@
 import "./App.css";
-import LangThemeContextProvider, {
-  useLang,
-} from "./context/LangThemeContext.jsx";
+import { useLang } from "./context/LangThemeContext.jsx";
 import data from "./data.js";
-import { Header } from "./components/Header.jsx";
-import { Hero } from "./components/Hero.jsx";
-import { Skills } from "./components/Skills.jsx";
-import { Profile } from "./components/Profile.jsx";
-import { Projects } from "./components/Projects.jsx";
-import { Footer } from "./components/Footer.jsx";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import axios from "axios";
+import { MainLayout } from "./layout/MainLayout.jsx";
 
 export function App() {
-  const { setTextData, textData, darkMode, setDarkMode } = useLang();
+  const { setTextData, textData, setDarkMode } = useLang();
   useEffect(() => {
     axios
       .post("https://reqres.in/api/workintech", data)
@@ -34,17 +27,7 @@ export function App() {
   }
   return (
     <>
-      {/* darkMode classını ekleme. */}
-      <div className={`${darkMode ? "dark" : "light"}`}>
-        <div className={`max-w-6xl justify-center mx-auto dark:bg-[#252128]`}>
-          <Header />
-          <Hero />
-          <Skills />
-          <Profile />
-          <Projects />
-        </div>
-        <Footer />
-      </div>
+      <MainLayout />
     </>
   );
 }

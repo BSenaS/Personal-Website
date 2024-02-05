@@ -8,10 +8,10 @@ export function Hero() {
   const { textData, lang } = useLang();
   const txt = textData[lang].introduction;
   return (
-    <div className="max-w-full	flex flex-wrap  justify-between mx-4 mb-4">
+    <div className="flex flex-wrap  justify-between mx-4 mb-4">
       {/* Left Div */}
-      <div className="max-w-1/2 max-h-96 flex ">
-        <div className="min-h-full flex flex-col justify-between">
+      <div className="w-full sm:max-w-1/2 max-h-96 flex ">
+        <div className="flex flex-col justify-between">
           <div className="flex-wrap">
             <span className="text-4xl font-semibold dark:text-[#aebccf]">
               {txt.greeting1}
@@ -30,8 +30,8 @@ export function Hero() {
           <div>
             <span className="text-[#777] dark:text-white ">{txt.p1}</span>
           </div>
-          <div className="min-h-min flex flex-col ">
-            <div className="flex items-center">
+          <div className="flex flex-col ">
+            <div className="flex items-center flex-wrap ">
               <a
                 className="text-[#3730A3] border rounded-md px-6 py-2 text-lg font-medium dark:text-[#E1E1FF] dark:bg-[#E1E1FF]"
                 href="mailto:batuhansenasert@gmail.com"
@@ -60,11 +60,11 @@ export function Hero() {
         </div>
       </div>
       {/* Right Div */}
-      <div className="">
+      <div className="flex justify-center items-center">
         <img
           src={insta}
           alt="instaPP"
-          className="max-w-lg max-h-96 rounded-2xl object-contain flex flex-wrap"
+          className="max-w-lg max-h-96 rounded-2xl object-contain "
         />
       </div>
     </div>
