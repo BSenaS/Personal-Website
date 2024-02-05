@@ -12,8 +12,9 @@ export const LangThemeContextProvider = ({ children }) => {
   };
   //2.darkmode için state
   const [darkMode, setDarkMode] = useState(true);
-  const darkModeHandler = () => {
-    setDarkMode(darkMode ? false : true);
+  const darkModeHandler = (checked) => {
+    setDarkMode(!checked);
+    console.log(checked);
   };
 
   //axios isteği

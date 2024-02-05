@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     colors: {
       transparent: "transparent",
@@ -14,6 +15,8 @@ export default {
       "bubble-gum": "#ff77e9",
       bermuda: "#78dcca",
       "color-gray": "#777",
+      dark: "#232A3C",
+      medium: "#293245",
     },
     extend: {
       fontFamily: {

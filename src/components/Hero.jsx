@@ -1,6 +1,9 @@
 import React from "react";
 import { useLang } from "../context/LangThemeContext";
 import insta from "../assets/instaPP.jpg";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+
 export function Hero() {
   const { textData, lang } = useLang();
   const txt = textData[lang].introduction;
@@ -10,48 +13,54 @@ export function Hero() {
       <div className="max-w-1/2 max-h-96 flex ">
         <div className="min-h-full flex flex-col justify-between">
           <div className="flex-wrap">
-            <span className="text-4xl font-semibold ">{txt.greeting1}</span>
+            <span className="text-4xl font-semibold dark:text-[#aebccf]">
+              {txt.greeting1}
+            </span>
           </div>
           <div className="flex-wrap">
-            <span className="text-5xl font-semibold leading-normal">
+            <span className="text-5xl font-semibold leading-normal dark:text-[#aebccf]">
               {txt.greeting2}
             </span>
           </div>
           <div className="flex-wrap">
-            <span className="text-2xl">{txt.greeting3}</span>
+            <span className="text-2xl dark:text-[#aebccf]">
+              {txt.greeting3}
+            </span>
           </div>
           <div>
-            <span className="text-[#777]">{txt.p1}</span>
+            <span className="text-[#777] dark:text-white ">{txt.p1}</span>
           </div>
           <div className="min-h-min flex flex-col ">
             <div className="flex items-center">
               <a
-                className="text-[#3730A3] border rounded-md px-6 py-2 text-lg font-medium "
+                className="text-[#3730A3] border rounded-md px-6 py-2 text-lg font-medium dark:text-[#E1E1FF] dark:bg-[#E1E1FF]"
                 href="mailto:batuhansenasert@gmail.com"
               >
-                {txt.iletişim1}
+                <span className="dark:text-[#000000]">{txt.iletişim1}</span>
               </a>
 
               <a
                 href="https://github.com/BSenaS"
                 target="blank"
-                className="text-[#3730A3] border rounded-md px-6 py-2 text-lg font-medium ml-2"
+                className="text-[#3730A3] border rounded-md px-6 py-2 text-lg font-medium ml-2 flex items-center dark:bg-[#383838]"
               >
-                {txt.iletişim2}
+                <FaGithub className="mr-2 dark:text-[#BAB2E7]" size={17} />
+                <span className="dark:text-[#E1E1FF]">{txt.iletişim2}</span>
               </a>
               <a
                 href="https://www.linkedin.com/in/bssert/"
                 target="blank"
-                className="text-[#3730A3] border rounded-md px-6 py-2 text-lg font-medium ml-2"
+                className="text-[#3730A3] border rounded-md px-6 py-2 text-lg font-medium ml-2 flex items-center dark:bg-[#383838]"
               >
-                {txt.iletişim3}
+                <FaLinkedinIn className="mr-2 dark:text-[#BAB2E7]" size={17} />
+                <span className="dark:text-[#E1E1FF]">{txt.iletişim3}</span>
               </a>
             </div>
           </div>
         </div>
       </div>
       {/* Right Div */}
-      <div>
+      <div className="">
         <img
           src={insta}
           alt="instaPP"

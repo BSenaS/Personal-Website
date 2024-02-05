@@ -13,13 +13,16 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 export function App() {
-  const { setTextData, textData } = useLang();
+  const { setTextData, textData, darkMode, setDarkMode } = useLang();
   useEffect(() => {
     axios
       .post("https://reqres.in/api/workintech", data)
       .then((response) => {
+        //1.Postlanan veriyi, setTextDataya atayıp kullanma.
         setTextData({ ...response.data });
-        console.log(textData);
+        //2.DarkModu localStoregeden çekip site refresh edildiğinde hatırlama.
+        const theme = localStorage.getItem("theme");
+        theme === "dark" ? setDarkMode(true) : setDarkMode(false);
       })
       .catch((error) => {
         console.log(error);
@@ -27,12 +30,13 @@ export function App() {
   }, []);
   //Apiden veri dönmeden componentleri render etme.Daha temiz bir kod yazılabilirmi?
   if (!Object.keys(textData).length) {
-    return <div>Loading...</div>;
+    return <div></div>;
   }
   return (
     <>
-      <div>
-        <div className="max-w-6xl justify-center mx-auto">
+      {/* darkMode classını ekleme. */}
+      <div className={`${darkMode ? "dark" : "light"}`}>
+        <div className={`max-w-6xl justify-center mx-auto dark:bg-[#252128]`}>
           <Header />
           <Hero />
           <Skills />

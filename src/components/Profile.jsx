@@ -15,20 +15,20 @@ export function Profile() {
           </h2>
           <div className="flex flex-col ">
             <div className="flex items-center mb-4">
-              <strong className="pr-2">{txt.basicinfo.birthdatekey}:</strong>
-              <span>{txt.basicinfo.birthdate}</span>
+              <strong className="w-1/3">{txt.basicinfo.birthdatekey}:</strong>
+              <span className=" w-1/2">{txt.basicinfo.birthdate}</span>
             </div>
             <div className="flex items-center mb-4">
-              <strong className="pr-2">{txt.basicinfo.locationkey}:</strong>
-              <span>{txt.basicinfo.location}</span>
+              <strong className="w-1/3">{txt.basicinfo.locationkey}:</strong>
+              <span className="w-1/2">{txt.basicinfo.location}</span>
             </div>
             <div className="flex items-center mb-4">
-              <strong className="pr-2">{txt.basicinfo.edukey}:</strong>
-              <span>{txt.basicinfo.edu}</span>
+              <strong className="w-1/3">{txt.basicinfo.edukey}:</strong>
+              <span className=" w-1/2">{txt.basicinfo.edu}</span>
             </div>
             <div className="flex items-center mb-4">
-              <strong className="pr-2">{txt.basicinfo.rolekey}:</strong>
-              <span>{txt.basicinfo.role}</span>
+              <strong className="w-1/3">{txt.basicinfo.rolekey}:</strong>
+              <span className=" w-1/2">{txt.basicinfo.role}</span>
             </div>
           </div>
         </div>
