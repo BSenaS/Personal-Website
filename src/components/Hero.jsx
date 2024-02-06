@@ -60,7 +60,7 @@ export function Hero() {
         </div>
       </div>
       {/* Right Div */}
-      <div className="flex justify-center items-center">
+      <div className="flex ">
         <img
           src={insta}
           alt="instaPP"

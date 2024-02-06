@@ -14,7 +14,7 @@ export const MainLayout = () => {
       {/* darkMode classını ekleme. */}
       <div className={`${darkMode ? "dark" : "light"}`}>
         <div className="dark:bg-[#252128]">
-          <div className={`max-w-6xl justify-center mx-auto dark:bg-[#252128]`}>
+          <div className={`max-w-6xl justify-center mx-auto`}>
             <Header />
             <Hero />
             <Skills />

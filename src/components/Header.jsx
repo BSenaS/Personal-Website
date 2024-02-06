@@ -14,7 +14,9 @@ export function Header() {
           <span className="text-[#777] font-bold ">{txt.darkmode}</span>
           <span className="text-[#777] font-bold">|</span>
           <button onClick={langHandler} className="flex gap-x-2">
-            <span className="text-[#4731D3] font-bold">{txt.languagetxt}</span>
+            <span className="text-[#4731D3] dark:text-[#BAB2E7] font-bold">
+              {txt.languagetxt}
+            </span>
             <span className="text-[#777] font-bold">{txt.language}</span>
           </button>
         </header>
