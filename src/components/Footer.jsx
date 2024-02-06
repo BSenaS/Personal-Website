@@ -6,11 +6,11 @@ export function Footer() {
   const txt = textData[lang].footer;
   return (
     <div className="dark:bg-[#141414]">
-      <div className="max-w-6xl justify-center mx-auto py-20">
-        <div className="text-4xl font-semibold	max-w-[540px] leading-tight flex-wrap mb-8">
+      <div className="max-w-6xl justify-center mx-auto py-20 flex flex-col items-center md:items-start">
+        <div className="text-4xl font-semibold	lg:max-w-[540px] leading-tight flex-wrap mb-8 text-center ">
           <span className="dark:text-[#AEBCCF]">{txt.title}</span>
         </div>
-        <div className="flex justify-between flex-wrap ">
+        <div className="flex justify-center sm:w-full sm:justify-between flex-wrap ">
           <div className="inline-flex mb-4">
             <span className="mr-2">👉</span>
             <a

@@ -8,9 +8,9 @@ export function Hero() {
   const { textData, lang } = useLang();
   const txt = textData[lang].introduction;
   return (
-    <div className="flex flex-wrap  justify-between mx-4 mb-4">
+    <div className="flex flex-wrap  justify-between mx-4 mb-4 grow">
       {/* Left Div */}
-      <div className="w-full sm:max-w-1/2 max-h-96 flex ">
+      <div className="w-full sm:max-w-1/2 sm:max-h-96 flex ">
         <div className="flex flex-col justify-between">
           <div className="flex-wrap">
             <span className="text-4xl font-semibold dark:text-[#aebccf]">
@@ -31,7 +31,7 @@ export function Hero() {
             <span className="text-[#777] dark:text-white ">{txt.p1}</span>
           </div>
           <div className="flex flex-col ">
-            <div className="flex items-center flex-wrap ">
+            <div className="flex items-center flex-wrap justify-center gap-2 sm:justify-start py-4 sm:py-0">
               <a
                 className="text-[#3730A3] border rounded-md px-6 py-2 text-lg font-medium dark:text-[#E1E1FF] dark:bg-[#E1E1FF]"
                 href="mailto:batuhansenasert@gmail.com"
@@ -60,7 +60,7 @@ export function Hero() {
         </div>
       </div>
       {/* Right Div */}
-      <div className="flex ">
+      <div className="flex mx-auto lg:mr-0 py-4 sm:py-0">
         <img
           src={insta}
           alt="instaPP"
