@@ -3,10 +3,15 @@ import { useLang } from "../context/LangThemeContext";
 import insta from "../assets/instaPP.jpg";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
 
 export function Hero() {
   const { textData, lang } = useLang();
   const txt = textData[lang].introduction;
+  //To write objects in to type-animation i had to use variable names.
+  const fullDev = txt.greeting3;
+  const frontDev = txt.greeting4;
+  const backDev = txt.greeting5;
   return (
     <div className="flex flex-wrap  justify-between mx-4 mb-4 grow">
       {/* Left Div */}
@@ -23,9 +28,13 @@ export function Hero() {
             </span>
           </div>
           <div className="flex-wrap">
-            <span className="text-2xl dark:text-[#aebccf]">
-              {txt.greeting3}
-            </span>
+            {/* Animated typewriter */}
+            <TypeAnimation
+              sequence={[frontDev, 1000, backDev, 1000, fullDev, 1000]}
+              speed={50}
+              className="text-2xl dark:text-[#aebccf]"
+              repeat={Infinity}
+            />
           </div>
           <div>
             <span className="text-[#777] dark:text-white ">{txt.p1}</span>

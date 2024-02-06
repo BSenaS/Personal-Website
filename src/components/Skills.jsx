@@ -5,7 +5,10 @@ export function Skills() {
   const { textData, lang } = useLang();
   const txt = textData[lang].skills;
   return (
-    <div className="max-w-full flex flex-wrap mx-4 mb-4 sm:justify-between sm:mt-16">
+    <div
+      id="skills"
+      className="max-w-full flex flex-wrap mx-4 mb-4 sm:justify-between sm:mt-16 skills"
+    >
       <h1 className="min-w-full text-5xl font-medium mb-8">
         <span className="dark:text-[#AEBCCF]">{txt.title}</span>
       </h1>
@@ -14,7 +17,7 @@ export function Skills() {
         {/* Yeni eklenen div */}
         {txt.skillerim.map((skill, index) => {
           return (
-            <div key={index} className="flex flex-wrap flex-col max-w-72 ">
+            <div key={index} className="flex flex-wrap flex-col max-w-72">
               <h2 className="font-medium text-3xl text-[#4338CA] pb-4">
                 <span className="dark:text-[#B7AAFF]">{skill.name}</span>
               </h2>

@@ -6,7 +6,7 @@ export function Projects() {
   const txt = textData[lang].projects;
   const filteredProjects = [txt.project1, txt.project2, txt.project3];
   return (
-    <div className="mx-4">
+    <div className="mx-4 projects" id="projects">
       <div className="text-5xl py-8 dark:text-[#AEBCCF]">{txt.title}</div>
       <div className="flex justify-between  flex-wrap ">
         {filteredProjects.map((item, index) => {

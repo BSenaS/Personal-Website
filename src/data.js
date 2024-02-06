@@ -12,7 +12,9 @@ const data = {
     introduction: {
       greeting1: "Merhaba,ben ",
       greeting2: "Batuhan Sena Sert",
-      greeting3: "Web Developer",
+      greeting3: "Full Stack Developer",
+      greeting4: "Frontend Developer",
+      greeting5: "Backend Developer",
       p1: "Merhaba,ben Batuhan.Bir web geliştiriciyim. Sağlam ve ölçeklenebilir ön uç ürünleri oluşturmak ve harika kullanıcı deneyimleri sunmak için buradayım. Benimle tanışmak isterseniz, aşağıdaki kanallardan bana ulaşabilirsiniz.",
       iletişim1: "İletişim",
       iletişim2: "Github",
@@ -31,6 +33,18 @@ const data = {
         },
         {
           name: "Node.Js",
+          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          name: "Redux",
+          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          name: "Figma",
+          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
+        {
+          name: "Tailwind",
           desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         },
       ],
@@ -112,7 +126,9 @@ const data = {
     introduction: {
       greeting1: "Hi, I'm ",
       greeting2: "Batuhan Sena Sert",
-      greeting3: "Web Developer",
+      greeting3: "Full Stack Developer",
+      greeting4: "Frontend Developer",
+      greeting5: "Backend Developer",
       p1: "Hi, I'm Batuhan. I'm a web developer. I'm here to create robust and scalable frontend products and provide great user experiences. If you'd like to get to know me, you can reach me through the channels below.",
       contact1: "batuhansenasert@gmail.com",
       contact2: "https://github.com/BSenaS",
