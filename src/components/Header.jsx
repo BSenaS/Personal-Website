@@ -42,9 +42,13 @@ export function Header() {
           >
             {txt.proje}
           </Link>
-          <span className="text-[#3730A3] border rounded-md px-4 md:px-6 py-2 text-lg font-medium dark:bg-white">
+
+          <a
+            href="mailto:batuhansenasert@gmail.com"
+            className="text-[#3730A3] border rounded-md px-4 md:px-6 py-2 text-lg font-medium dark:bg-white"
+          >
             {txt.contact}
-          </span>
+          </a>
         </div>
       </div>
     </>
