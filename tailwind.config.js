@@ -19,6 +19,10 @@ export default {
       medium: "#293245",
     },
     extend: {
+      aspectRatio: {
+        "4/3": "4 / 3",
+        "3/2": "3 / 2",
+      },
       fontFamily: {
         inter: ["Inter"],
       },

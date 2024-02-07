@@ -1,20 +1,21 @@
 //Burada, dark mode ve language logic'i bulanacak.
 import { createContext, useContext, useState } from "react";
 export const LangThemeContext = createContext();
-import data from "../data.js";
-import axios from "axios";
 
 export const LangThemeContextProvider = ({ children }) => {
-  //1.language için state
-  const [lang, setLang] = useState("tr");
+  //1.Local Storageden language tercihi varsa bunu çekip bir variable'a atıyorum.
+  const currentLang = localStorage.getItem("language");
+  //2.language için state
+  const [lang, setLang] = useState(currentLang || "tr");
+  //3.languageimi değiştiren handler.
   const langHandler = () => {
     lang === "tr" ? setLang("en") : setLang("tr");
   };
-  //2.darkmode için state
+
+  //Darkmode için state.
   const [darkMode, setDarkMode] = useState(true);
-  const darkModeHandler = (checked) => {
-    setDarkMode(!checked);
-    console.log(checked);
+  const darkModeHandler = () => {
+    setDarkMode(!darkMode);
   };
 
   //axios isteği

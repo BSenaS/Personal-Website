@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLang } from "../context/LangThemeContext";
 import { Toggle } from "./Toggle";
 import { Link } from "react-scroll";
@@ -6,6 +6,13 @@ import { Link } from "react-scroll";
 export function Header() {
   const { textData, lang, langHandler, darkModeHandler, darkMode } = useLang();
   const txt = textData[lang].header;
+  useEffect(() => {
+    if (lang === "tr") {
+      localStorage.setItem("language", "tr");
+    } else {
+      localStorage.setItem("language", "en");
+    }
+  }, [lang]);
   return (
     <>
       <div className="justify-center mx-4 mb-8">

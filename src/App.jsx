@@ -13,8 +13,9 @@ export function App() {
       .then((response) => {
         //1.Postlanan veriyi, setTextDataya atayıp kullanma.
         setTextData({ ...response.data });
-        //2.DarkModu localStoregeden çekip site refresh edildiğinde hatırlama.
+        //2.LocalStorageden darkmode varsa bunu çek.
         const theme = localStorage.getItem("theme");
+        //3.DarkModu localStoregeden çekip site refresh edildiğinde hatırlama.
         theme === "dark" ? setDarkMode(true) : setDarkMode(false);
       })
       .catch((error) => {

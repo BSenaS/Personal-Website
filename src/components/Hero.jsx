@@ -69,11 +69,11 @@ export function Hero() {
         </div>
       </div>
       {/* Right Div */}
-      <div className="flex mx-auto lg:mr-0 py-4 sm:py-0">
+      <div className="flex mx-auto lg:mr-0 py-4 sm:py-0 ">
         <img
           src={insta}
           alt="instaPP"
-          className="max-w-lg max-h-96 rounded-2xl object-contain "
+          className="max-w-lg max-h-96 rounded-2xl  object-contain"
         />
       </div>
     </div>

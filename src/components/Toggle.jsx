@@ -19,7 +19,7 @@ export const Toggle = () => {
     <div className="flex flex-col justify-center ml-3">
       <div
         className="w-16 h-6 flex items-center dark:bg-[#3A3A3A] bg-[#4731D3] cursor-pointer rounded-full p-1 relative"
-        onClick={() => setDarkMode(!darkMode)}
+        onClick={darkModeHandler}
       >
         <FaMoon className="text-medium" size={14} />
         <div
