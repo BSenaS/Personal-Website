@@ -1,0 +1,28 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.logos-slide {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.logos-slide:hover .animate-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide div {
+  flex-shrink: 0;
+}
+
+.animate-slide {
+  display: flex;
+  animation: slide 20s linear infinite;
+}

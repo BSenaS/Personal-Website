@@ -13,9 +13,8 @@ export function App() {
       .then((response) => {
         //1.Postlanan veriyi, setTextDataya atayıp kullanma.
         setTextData({ ...response.data });
-        //2.LocalStorageden darkmode varsa bunu çek.
+        //LS'den datayi çek, ve kullanıcı seçimini hatırla.
         const theme = localStorage.getItem("theme");
-        //3.DarkModu localStoregeden çekip site refresh edildiğinde hatırlama.
         theme === "dark" ? setDarkMode(true) : setDarkMode(false);
       })
       .catch((error) => {
@@ -24,7 +23,7 @@ export function App() {
   }, []);
   //Apiden veri dönmeden componentleri render etme.Daha temiz bir kod yazılabilirmi?
   if (!Object.keys(textData).length) {
-    return <div></div>;
+    return <div>Loading...</div>;
   }
   return (
     <>

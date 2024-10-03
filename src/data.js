@@ -1,3 +1,18 @@
+import JavaScriptIcon from "./assets/skill_icons/javascript-js.png";
+import tsLogo from "./assets/skill_icons/tsLogo.png";
+import javaLogo from "./assets/skill_icons/javaLogo.png";
+import reactLogo from "./assets/skill_icons/reactLogo.png";
+import nextjsLogo from "./assets/skill_icons/nextjsLogo.png";
+import vueLogo from "./assets/skill_icons/vueLogo.png";
+import springBootLogo from "./assets/skill_icons/springBootLogo.png";
+import nodeLogo from "./assets/skill_icons/nodeLogo.png";
+import reduxLogo from "./assets/skill_icons/reduxLogo.png";
+import tailwindLogo from "./assets/skill_icons/tailwindLogo.png";
+import boostrapLogo from "./assets/skill_icons/boostrapLogo.png";
+import wpLogo from "./assets/skill_icons/wpLogo.png";
+import figmaLogo from "./assets/skill_icons/figmaLogo.png";
+import cPanelLogo from "./assets/skill_icons/linux-panel-logo.png";
+
 const data = {
   tr: {
     header: {
@@ -24,28 +39,60 @@ const data = {
       title: "Beceriler",
       skillerim: [
         {
-          name: "Java Script",
-          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          name: "JavaScript",
+          icon: JavaScriptIcon,
         },
         {
-          name: "React.Js",
-          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          name: "TypeScript",
+          icon: tsLogo,
+        },
+        {
+          name: "Java",
+          icon: javaLogo,
+        },
+        {
+          name: "React",
+          icon: reactLogo,
+        },
+        {
+          name: "Next.js",
+          icon: nextjsLogo,
+        },
+        {
+          name: "Vue.js",
+          icon: vueLogo,
+        },
+        {
+          name: "Spring Boot",
+          icon: springBootLogo,
         },
         {
           name: "Node.Js",
-          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          icon: nodeLogo,
         },
         {
           name: "Redux",
-          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          icon: reduxLogo,
+        },
+        {
+          name: "TailwindCSS",
+          icon: tailwindLogo,
+        },
+        {
+          name: "Boostrap",
+          icon: boostrapLogo,
+        },
+        {
+          name: "Wordpress",
+          icon: wpLogo,
         },
         {
           name: "Figma",
-          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          icon: figmaLogo,
         },
         {
-          name: "Tailwind",
-          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          name: "cPanel",
+          icon: cPanelLogo,
         },
       ],
     },
@@ -142,27 +189,59 @@ const data = {
       skillerim: [
         {
           name: "JavaScript",
-          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          icon: JavaScriptIcon,
         },
         {
-          name: "React.js",
-          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          name: "TypeScript",
+          icon: tsLogo,
         },
         {
-          name: "Node.js",
-          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          name: "Java",
+          icon: javaLogo,
+        },
+        {
+          name: "React",
+          icon: reactLogo,
+        },
+        {
+          name: "Next.js",
+          icon: nextjsLogo,
+        },
+        {
+          name: "Vue.js",
+          icon: vueLogo,
+        },
+        {
+          name: "Spring Boot",
+          icon: springBootLogo,
+        },
+        {
+          name: "Node.Js",
+          icon: nodeLogo,
         },
         {
           name: "Redux",
-          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          icon: reduxLogo,
+        },
+        {
+          name: "TailwindCSS",
+          icon: tailwindLogo,
+        },
+        {
+          name: "Boostrap",
+          icon: boostrapLogo,
+        },
+        {
+          name: "Wordpress",
+          icon: wpLogo,
         },
         {
           name: "Figma",
-          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          icon: figmaLogo,
         },
         {
-          name: "Tailwind",
-          desc: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          name: "cPanel",
+          icon: cPanelLogo,
         },
       ],
     },
