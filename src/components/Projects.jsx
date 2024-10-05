@@ -4,7 +4,14 @@ import { useLang } from "../context/LangThemeContext";
 export function Projects() {
   const { textData, lang } = useLang();
   const txt = textData[lang].projects;
-  const filteredProjects = [txt.project1, txt.project2, txt.project3];
+  const filteredProjects = [
+    txt.project1,
+    txt.project2,
+    txt.project3,
+    txt.project4,
+    txt.project5,
+    txt.project6,
+  ];
   return (
     <div className="mx-4 projects" id="projects">
       <div className="text-5xl py-8 dark:text-[#AEBCCF]">{txt.title}</div>
@@ -26,11 +33,11 @@ export function Projects() {
               <span className="text-sm text-[#6B7280] mb-4 dark:text-white">
                 {item.p1}
               </span>
-              <div className="flex flex-row flex-wrap justify-between">
+              <div className="flex flex-row flex-wrap justify-between gap-1">
                 {item.tags.map((tag, tagIndex) => (
                   <span
                     key={tagIndex}
-                    className="px-6 py-1 text-[#3730A3] mb-2 border border-solid rounded dark:bg-[#383838] dark:text-[#8F88FF]"
+                    className="px-2 py-1 text-[#3730A3] mb-2 border border-solid rounded dark:bg-[#383838] dark:text-[#8F88FF]"
                   >
                     {tag}
                   </span>
@@ -38,18 +45,18 @@ export function Projects() {
               </div>
               <div className="flex flex-row justify-between mt-4">
                 <a
-                  href="https://github.com/bsenas"
+                  href={item.links.git}
                   className="text-[#3730A3] font-medium underline dark:text-white"
                   target="blank"
                 >
-                  {item.links.git}
+                  Github
                 </a>
                 <a
-                  href="https://github.com/bsenas"
+                  href={item.links.redirect}
                   className="text-[#3730A3] font-medium underline dark:text-white"
                   target="blank"
                 >
-                  {item.links.redirect}
+                  Project
                 </a>
               </div>
             </div>
