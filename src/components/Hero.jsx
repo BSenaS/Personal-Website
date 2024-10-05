@@ -13,7 +13,7 @@ export function Hero() {
   const frontDev = txt.greeting4;
   const backDev = txt.greeting5;
   return (
-    <div className="flex flex-wrap  justify-between mx-4 mb-4 grow ">
+    <div className="flex flex-wrap justify-between mx-4 mb-4 grow ">
       {/* Left Div */}
       <div className="w-full sm:max-w-1/2 sm:max-h-96 flex">
         <div className="flex flex-col justify-between">

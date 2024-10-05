@@ -330,7 +330,7 @@ const data = {
         edukey: "Education",
         edu: "Akdeniz University, Management Information Systems Bachelor's Degree, 2023",
         rolekey: "Preferred Role",
-        role: "Frontend, UI",
+        role: "Full Stack Web Dev",
       },
       aboutme: {
         title: "About Me",
