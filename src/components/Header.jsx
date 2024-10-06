@@ -35,7 +35,7 @@ export function Header() {
             smooth={true}
             offset={-50}
             duration={500}
-            className="text-[#777] rounded-md md:px-6 px-4 py-2 text-lg font-medium cursor-pointer"
+            className="text-[#777] rounded-md md:px-6 px-4 py-2 text-lg font-medium cursor-pointer dark:hover:text-[#FAFAFA] hover:text-[#000000]"
           >
             {txt.skill}
           </Link>
@@ -45,14 +45,14 @@ export function Header() {
             smooth={true}
             offset={0}
             duration={500}
-            className="text-[#777] rounded-md md:px-6 px-4 py-2 text-lg font-medium cursor-pointer"
+            className="text-[#777] rounded-md md:px-6 px-4 py-2 text-lg font-medium cursor-pointer dark:hover:text-[#FAFAFA] hover:text-[#000000]"
           >
             {txt.proje}
           </Link>
 
           <a
             href="mailto:batuhansenasert@gmail.com"
-            className="text-[#3730A3] border rounded-md px-4 md:px-6 py-2 text-lg font-medium dark:bg-white"
+            className="text-[#3730A3] border rounded-md px-4 md:px-6 py-2 text-lg font-medium dark:bg-[#E1E1FF] hover:dark:bg-[#FAFAFA] hover:text-[#000000]"
           >
             {txt.contact}
           </a>

@@ -42,16 +42,16 @@ export function Hero() {
           <div className="flex flex-col ">
             <div className="flex items-center flex-wrap justify-center gap-2 sm:justify-start py-4 sm:py-0">
               <a
-                className="text-[#3730A3] border rounded-md px-6 py-2 text-lg font-medium dark:text-[#E1E1FF] dark:bg-[#E1E1FF]"
+                className="border rounded-md px-6 py-2 text-lg font-medium  dark:bg-[#E1E1FF] text-[#3730A3] hover:dark:bg-[#FAFAFA]"
                 href="mailto:batuhansenasert@gmail.com"
               >
-                <span className="dark:text-[#000000]">{txt.iletişim1}</span>
+                <span>{txt.iletişim1}</span>
               </a>
 
               <a
                 href="https://github.com/BSenaS"
                 target="blank"
-                className="text-[#3730A3] border rounded-md px-6 py-2 text-lg font-medium ml-2 flex items-center dark:bg-[#383838]"
+                className="text-[#3730A3] border rounded-md px-6 py-2 text-lg font-medium ml-2 flex items-center dark:bg-[#383838] dark:hover:opacity-80 transition-opacity duration-300"
               >
                 <FaGithub className="mr-2 dark:text-[#BAB2E7]" size={17} />
                 <span className="dark:text-[#E1E1FF]">{txt.iletişim2}</span>
@@ -59,11 +59,12 @@ export function Hero() {
               <a
                 href="https://www.linkedin.com/in/bssert/"
                 target="blank"
-                className="text-[#3730A3] border rounded-md px-6 py-2 text-lg font-medium ml-2 flex items-center dark:bg-[#383838]"
+                className="text-[#3730A3] border rounded-md px-6 py-2 text-lg font-medium ml-2 flex items-center dark:bg-[#383838] dark:hover:opacity-80 transition-opacity duration-300"
               >
                 <FaLinkedinIn className="mr-2 dark:text-[#BAB2E7]" size={17} />
                 <span className="dark:text-[#E1E1FF]">{txt.iletişim3}</span>
               </a>
+              <a href=""></a>
             </div>
           </div>
         </div>
