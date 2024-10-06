@@ -4,6 +4,7 @@ import insta from "../assets/instaPP.jpg";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
+import BatuhanSenaSertCv from "../assets/BatuhanSenaSertCv.pdf";
 
 export function Hero() {
   const { textData, lang } = useLang();
@@ -13,7 +14,7 @@ export function Hero() {
   const frontDev = txt.greeting4;
   const backDev = txt.greeting5;
   return (
-    <div className="flex flex-wrap justify-between mx-4 mb-4 grow ">
+    <div className="flex flex-wrap justify-between mx-4 mb-4 grow">
       {/* Left Div */}
       <div className="w-full sm:max-w-1/2 sm:max-h-96 flex">
         <div className="flex flex-col justify-between">
@@ -42,16 +43,16 @@ export function Hero() {
           <div className="flex flex-col ">
             <div className="flex items-center flex-wrap justify-center gap-2 sm:justify-start py-4 sm:py-0">
               <a
-                className="border rounded-md px-6 py-2 text-lg font-medium  dark:bg-[#E1E1FF] text-[#3730A3] hover:dark:bg-[#FAFAFA]"
+                className="border rounded-md px-4 py-2 text-lg font-medium text-[#3730A3] dark:bg-[#383838] "
                 href="mailto:batuhansenasert@gmail.com"
               >
-                <span>{txt.iletişim1}</span>
+                <span className="dark:text-[#E1E1FF]">{txt.iletişim1}</span>
               </a>
 
               <a
                 href="https://github.com/BSenaS"
                 target="blank"
-                className="text-[#3730A3] border rounded-md px-6 py-2 text-lg font-medium ml-2 flex items-center dark:bg-[#383838] dark:hover:opacity-80 transition-opacity duration-300"
+                className="text-[#3730A3] border rounded-md px-4 py-2 text-lg font-medium ml-2 flex items-center dark:bg-[#383838] dark:hover:opacity-80 transition-opacity duration-300"
               >
                 <FaGithub className="mr-2 dark:text-[#BAB2E7]" size={17} />
                 <span className="dark:text-[#E1E1FF]">{txt.iletişim2}</span>
@@ -59,12 +60,18 @@ export function Hero() {
               <a
                 href="https://www.linkedin.com/in/bssert/"
                 target="blank"
-                className="text-[#3730A3] border rounded-md px-6 py-2 text-lg font-medium ml-2 flex items-center dark:bg-[#383838] dark:hover:opacity-80 transition-opacity duration-300"
+                className="text-[#3730A3] border rounded-md px-4 py-2 text-lg font-medium ml-2 flex items-center dark:bg-[#383838] dark:hover:opacity-80 transition-opacity duration-300"
               >
                 <FaLinkedinIn className="mr-2 dark:text-[#BAB2E7]" size={17} />
                 <span className="dark:text-[#E1E1FF]">{txt.iletişim3}</span>
               </a>
-              <a href=""></a>
+              <a
+                href={BatuhanSenaSertCv}
+                download={BatuhanSenaSertCv}
+                className="border rounded-md px-4 py-2 text-lg font-medium  dark:bg-[#E1E1FF] text-[#3730A3] hover:dark:bg-[#FAFAFA]"
+              >
+                Download Cv
+              </a>
             </div>
           </div>
         </div>
